@@ -1,0 +1,99 @@
+/* Write your code here. */
+.app-container {
+  background-image: linear-gradient(to right, #1d976c, #93f9b9);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto';
+}
+
+.inner-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 400px;
+}
+
+.main-heading {
+  font-size: 50px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.enter-phrase {
+  font-size: 15px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: left;
+}
+
+.input-text-container {
+  border-style: solid;
+  background-color: transparent;
+  border-radius: 5px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 18px;
+  border-color: #ffffff;
+
+  padding: 10px;
+  border-width: 1px;
+  outline: none;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.result-container {
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 30px;
+}
+
+.show-result {
+  color: #1d976c;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.image {
+  width: 500px;
+  height: 350px;
+}
+
+@media screen and (max-width: 768px) {
+  .text-content {
+    order: 1;
+    align-items: center;
+  }
+
+  .image {
+    order: 0;
+    width: 400px;
+    height: 220px;
+  }
+
+  .main-heading {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .input-text-container {
+    width: 80%;
+  }
+}
